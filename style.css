@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #2E8B57;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #3CB371;
+    border-radius: 5px;
+}
+
+/* Main Hero Section */
+.hero {
+    background-color: #f5fff5;
+    padding: 40px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2E8B57;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Section */
+#services {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2em;
+    color: #2E8B57;
+    margin-bottom: 20px;
+}
+
+.service {
+    display: inline-block;
+    width: calc(33.333% - 40px);
+    margin: 20px;
+    background-color: #f0f8f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service h3 {
+    color: #2E8B57;
+    margin-top: 15px;
+}
+
+.service p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
